@@ -1,0 +1,14 @@
+LabRentX local start-up
+
+1. Follow the setup and environment instructions in README.md.
+2. In one PowerShell terminal:
+   Set-Location .\backend
+   .\.venv\Scripts\Activate.ps1
+   python manage.py runserver 127.0.0.1:8000
+3. In a second PowerShell terminal:
+   Set-Location .\frontend
+   npm run dev
+4. Open the Vite URL printed in the frontend terminal.
+
+Do not run database migrations or demo seeding against a database containing
+existing project data without first taking a backup and reviewing the plan.
